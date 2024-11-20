@@ -1,0 +1,44 @@
+/* Address.css */
+
+.address-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .address-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .address-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .address-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .address-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e50914; /* Màu đỏ đặc trưng của CGV */
+  }
+  
+  .address-detail, .address-city {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  

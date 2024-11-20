@@ -1,0 +1,40 @@
+.login-container {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Đưa form lên đầu */
+  padding-top: 2rem; /* Thêm khoảng trống từ đầu trang */
+  min-height: 100vh; /* Vẫn giữ chiều cao toàn màn hình */
+}
+
+.login-box {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px); /* Hiệu ứng mờ */
+  max-width: 400px;
+  width: 90%;
+    /* Sử dụng position absolute để căn giữa ngang và đẩy lên đầu */
+    position: absolute;
+    top: 1rem; /* Khoảng cách từ đỉnh màn hình */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-box h2 {
+  color: #fff;
+}
+
+.ant-form-item {
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}

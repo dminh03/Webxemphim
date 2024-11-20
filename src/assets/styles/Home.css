@@ -1,0 +1,146 @@
+/* Tổng quan */
+* {
+    box-sizing: border-box;
+}
+
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif; /* Font chữ Roboto */
+}
+
+/* Phần chính (Hero Section) */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    width: 100vw;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Nút slide */
+.slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* Thẻ phim (Movie Card) */
+.movie-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.movie-image {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    padding: 15px;
+}
+
+.movie-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.movie-genre, .movie-duration {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Huy hiệu và xếp hạng (Badge & Rank) */
+.movie-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #FFD700;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.movie-rank {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Nút hành động (Buttons) */
+.button-container {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 10px;
+}
+
+.like-button, .book-button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button {
+    background-color: #3b5998;
+    color: white;
+}
+
+.book-button {
+    background-color: #e50914;
+    color: #fff;
+}
+
+.like-button:hover {
+    background-color: #2d4373;
+}
+
+.book-button:hover {
+    background-color: #d40812;
+}
