@@ -1,7 +1,7 @@
   import React, { useState } from 'react';
   import { Link } from 'react-router-dom';
   import { Modal } from 'antd';
-  import Detail from '../components/Movie/Detail'; // Đảm bảo đường dẫn đúng với file Detail.tsx
+  import Detail from '../components/Movie/Detail'; 
   import logo from '../assets/images/movie.png';
   import '../assets/styles/Home.css';
 
@@ -132,8 +132,7 @@
     };
 
     return (
-      <div className="max-w-screen-xl mx-auto">
-        {/* Header */}
+      <div>
         <header className="bg-gray-800 p-4 fixed w-full top-0 z-10">
           <nav className="flex justify-between items-center max-w-6xl mx-auto">
             <a href="/" className="flex items-center">
@@ -146,7 +145,8 @@
             </div>
           </nav>
         </header>
-
+        <div className="max-w-screen-xl mx-auto">
+        {/* Header */}       
         {/* Main Content */}
         <div className="p-16 mt-20">
           <h1 className="text-3xl font-bold mb-8">Phim Đang Chiếu</h1>
@@ -170,7 +170,6 @@
             ))}
           </div>
         </div>
-
         {/* Modal hiển thị chi tiết */}
         <Modal
           title={selectedMovie?.title}
@@ -195,6 +194,8 @@
           )}
         </Modal>
       </div>
+      </div>
+      
     );
   };
 
